@@ -61,4 +61,27 @@ section{
     justify-content: right;
     padding-left: 25%;
     flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.que-encontraras{
+    display: flex;
+    justify-content: right;
+    padding-right: 25%;
+    padding-left: 15px;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: right;
+    padding-left: 25%;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.newsletter-input{
+    width: 200px;
+    margin: 5px;
 }
