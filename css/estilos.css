@@ -85,3 +85,19 @@ section{
     width: 200px;
     margin: 5px;
 }
+
+.section-servicios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linea-servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.section-servicios h2{
+    text-align: center;
+}
