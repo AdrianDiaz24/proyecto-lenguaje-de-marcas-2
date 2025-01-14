@@ -145,3 +145,16 @@ section{
 .section-servicios article{
     width: 250px;
 }
+
+.redes-sociales{
+    background-image: url(../assets/images/fondo-gris.png);
+    text-align: center;
+}
+
+.redes-sociales div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
