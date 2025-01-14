@@ -29,7 +29,7 @@ body{
 }
 
 main{
-    height: 90vh;
+    min-height: 75vh;
 }
 
 a{
@@ -64,7 +64,7 @@ header a{
 
 section{
     border: 1px solid #080705;
-    margin: 150px;
+    margin: 100px;
     margin-left: 25%;
     margin-right: 25%;
     background-color: #FFFFFF;
@@ -104,10 +104,11 @@ section{
 .newsletter{
     display: flex;
     justify-content: right;
-    padding-left: 25%;
+    padding-left: 300px;
     flex-direction: column;
     padding-bottom: 15px;
-    width: 1000px;
+    width: 715px;
+    background-image: url(../assets/images/fondo-newsletter.png) ;
 }
 
 .newsletter input{
@@ -124,6 +125,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-image: url(../assets/images/fondo-gris.png);
 }
 
 .linea-servicios{
@@ -134,4 +136,12 @@ section{
 
 .section-servicios h2{
     text-align: center;
+}
+
+.section-servicios div{
+    text-align: center;
+}
+
+.section-servicios article{
+    width: 250px;
 }
