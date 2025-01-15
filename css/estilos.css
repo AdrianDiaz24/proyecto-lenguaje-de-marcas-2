@@ -167,3 +167,28 @@ section{
 .contacto button{
     margin: 10px;
 }
+
+.noticias{
+    background-image: url(../assets/images/fondo-gris.png);
+    text-align: center;
+}
+
+.noticias article{
+    background-color: #FFFFFF;
+    border: 2px solid #080705;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/fondo-gris.png);
+}
+
+.noticias div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.noticias div div{
+    flex-direction: column;
+}
