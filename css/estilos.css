@@ -37,7 +37,12 @@ a{
     color: #080705;
 }
 
-p{
+header p{
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer p  {
     margin: 5px;
     cursor: pointer;
 }
