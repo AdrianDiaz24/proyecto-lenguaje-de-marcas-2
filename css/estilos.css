@@ -158,3 +158,12 @@ section{
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.contacto{
+    background-image: url(../assets/images/fondo-gris.png);
+    text-align: center;
+}
+
+.contacto button{
+    margin: 10px;
+}
