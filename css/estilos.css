@@ -71,7 +71,6 @@ section{
     border: 1px solid #080705;
     margin: 100px;
     margin-left: 25%;
-    margin-right: 25%;
     background-color: #FFFFFF;
     width: 1000px;
 }
@@ -162,6 +161,12 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.redes-sociales img{
+    width: 200px;
+    height: 200px;
+
 }
 
 .contacto{
