@@ -39,6 +39,12 @@ main{
 a{
     text-decoration: none;
     color: #080705;
+
+}
+
+header a:hover{
+    transition: font-size 0.5s ease;
+    font-size: 20px;
 }
 
 header p{
@@ -96,7 +102,6 @@ section{
 .que-encontraras{
     display: flex;
     justify-content: space-between;
-    
     padding-left: 15px;
     flex-direction: row;
     padding-bottom: 15px;
@@ -157,6 +162,11 @@ section{
     width: 250px;
 }
 
+.section-servicios img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
 .redes-sociales{
     background-image: url(../assets/images/fondo-gris.png);
     text-align: center;
@@ -173,7 +183,16 @@ section{
 .redes-sociales img{
     width: 200px;
     height: 200px;
+}
 
+.redes-sociales a:hover{
+    transition: font-size 0.5s ease;
+    font-size: 20px;
+}
+
+.redes-sociales img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
 }
 
 .contacto{
