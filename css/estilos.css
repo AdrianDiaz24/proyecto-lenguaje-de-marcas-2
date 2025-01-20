@@ -51,10 +51,14 @@ header{
     background-color: #080705;
     color: #FFFFFF;
     padding: 10px;
-    padding-left: 25%;
-    padding-right: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
     display: flex;
     justify-content: space-around;
+    width: 1700px;
 }
 
 header a{
@@ -111,7 +115,7 @@ section{
     padding-left: 300px;
     flex-direction: column;
     padding-bottom: 15px;
-    width: 715px;
+    width: 700px;
     background-image: url(../assets/images/fondo-newsletter.png) ;
 }
 
@@ -201,4 +205,47 @@ section{
 
 .noticias div div{
     flex-direction: column;
+}
+
+.noticias img{
+    width: 200px;
+    height: 200px;
+    padding: 0PX;
+}
+
+.noticias article{
+    padding: 0%;
+}
+
+.noticias h4{
+    width: 200px;
+}
+
+.opiniones{
+    background-image: url(../assets/images/fondo-gris.png);
+    flex-direction: column;
+    text-align: center;
+}
+
+.opiniones div{
+    text-align: left;
+}
+
+.opiniones div img {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+}
+
+.opiniones article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.opiniones article div{
+    text-align: center;
+    padding: 50px;
+    width: 700px;
 }
