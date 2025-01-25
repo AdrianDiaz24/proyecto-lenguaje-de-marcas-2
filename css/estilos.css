@@ -204,6 +204,17 @@ section{
     margin: 10px;
 }
 
+.contacto-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto-servicios div{
+    display: flex;
+    flex-direction: column;
+}
+
 .noticias{
     background-image: url(../assets/images/fondo-gris.png);
     text-align: center;
@@ -270,4 +281,47 @@ section{
     text-align: center;
     padding: 50px;
     width: 700px;
+}
+
+.montaje{
+    display: none;
+}
+
+.contacto-servicios:has(#montaje:checked) ~ .montaje {
+    display: block;
+}
+
+header input[type="checkbox"]{
+    display: none;
+}
+
+header label{
+    cursor: pointer;
+}
+
+.sol{
+    margin: 0px;
+}
+
+.luna{
+    display: none;
+    margin: 0px;
+}
+
+input[type="checkbox"]:checked + label .sol {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label .luna {
+    display: block;
+}
+
+header:has(input[type="checkbox"]:checked) ~ main {
+    background-color: #182933;
+    color: #050505; 
+}
+
+header:has(input[type="checkbox"]:checked) ~ footer {
+    color: #ffffff;
+    background-color: #000000;
 }

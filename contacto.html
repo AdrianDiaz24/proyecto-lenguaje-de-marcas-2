@@ -14,6 +14,11 @@
         <p class="pagina-actual">Contactanos</p>
         <a href="noticias.html">Noticias</a>
         </div>
+        <input type="checkbox" id="dark-mode">
+        <label for="dark-mode">
+          <p class="sol">☀️</p> 
+          <p class="luna">🌙</p>
+        </label>
     </header>
     <main>
         <section class="contacto">
@@ -27,7 +32,24 @@
             <p>Direccion</p>
             <input type="text" placeholder="Direccion">
             <p>Servicio</p>
-            <input type="text" placeholder="Di que servicio solicitas">
+            <article class="contacto-servicios">
+                <div>
+                    <input type="checkbox"> Mantenimiento
+                    <input type="checkbox"> Reparacion
+                    <input type="checkbox" id="montaje"> Montaje
+                </div>
+                <div>
+                    <input type="checkbox"> Instalacion de SO
+                    <input type="checkbox"> Actualizacion de drivers
+                    <input type="checkbox"> Overcloking
+                </div>
+            </article>
+            <article class="montaje">
+                <p>Presupuesto:</p>
+            400€ <input type="range" min="400" max="4000" value="2200"> 4000€
+            <p>Color de los cables:</p>
+            <input type="color" value="#000000">
+            </article>
             <p>Mensaje:</p>
             <input type="text" placeholder="Escribe aquí tu mensaje"></input><br><br>
             <button>Enviar</button>
