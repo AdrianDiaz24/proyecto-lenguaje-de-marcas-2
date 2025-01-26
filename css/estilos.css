@@ -146,7 +146,7 @@ section{
 
 .linea-servicios{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -324,4 +324,55 @@ header:has(input[type="checkbox"]:checked) ~ main {
 header:has(input[type="checkbox"]:checked) ~ footer {
     color: #ffffff;
     background-color: #000000;
+}
+
+
+@media (width < 1037px) {
+    .quienes-somos{
+        background-image: url(../assets/images/fondo-gris.png);
+        padding: 10px;
+        width: 90%;
+        height: auto;
+    }
+    .que-encontraras img{
+        display: none;
+    }
+    .que-encontraras{
+        width: 90%;
+        padding: 10px;
+    }
+    .newsletter{
+        background-image: url(../assets/images/fondo-gris.png);
+        padding: 10px;
+        width: 90%;
+    }
+    .section-servicios div{
+        flex-direction: column;
+    }
+    .section-servicios{
+        width: 90%;
+        padding: 10px;
+        align-items: center;
+    }
+    .opiniones img{
+        display: none;
+    }
+    .opiniones{
+        width: 90%;
+        padding: 10px;
+    }
+    .opiniones article{
+        justify-content: center;
+    }
+    .contacto{
+        width: 90%;
+    }
+    .redes-sociales{
+        width: 90%;
+        padding: 10px;
+        align-items: center;
+    }
+    .noticias{
+        width: 90%;
+    }
 }
