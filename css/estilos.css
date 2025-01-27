@@ -185,6 +185,11 @@ section{
     transform: scale(1.1);
 }
 
+.section-servicios p{
+    text-align: left;
+    padding-left: 15px;
+}
+
 .redes-sociales{
     background-image: url(../assets/images/fondo-gris.png);
     text-align: center;
@@ -270,6 +275,9 @@ section{
 
 .noticias h4{
     width: 200px;
+    text-align: left;
+    padding-left: 20px;
+
 }
 
 .opiniones{
@@ -342,6 +350,28 @@ header:has(input[type="checkbox"]:checked) ~ main {
 header:has(input[type="checkbox"]:checked) ~ footer {
     color: #ffffff;
     background-color: #000000;
+}
+
+.evento{
+    background-color: #C3C3BE;
+    justify-content: center;
+    text-align: center;
+}
+
+.evento article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.evento img{
+    width: 400px;
+}
+
+.evento img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
 }
 
 
