@@ -23,37 +23,40 @@
     <main>
         <section class="contacto">
             <h2>Contacta con nosotros</h2>
-            <p>Nombre:</p>
-            <input type="text" placeholder="Nombre">
-            <p>Email:</p>
-            <input type="email" placeholder="Correo electronico">
-            <p>Telefono:</p>
-            <input type="number" placeholder="Nº de telefono">
-            <p>Direccion</p>
-            <input type="text" placeholder="Direccion">
-            <p>Servicio</p>
-            <article class="contacto-servicios">
-                <div>
-                    <input type="checkbox"> Mantenimiento
-                    <input type="checkbox"> Reparacion
-                    <input type="checkbox" id="montaje"> Montaje
-                </div>
-                <div>
-                    <input type="checkbox"> Instalacion de SO
-                    <input type="checkbox"> Actualizacion de drivers
-                    <input type="checkbox"> Overcloking
-                </div>
-            </article>
-            <article class="montaje">
-                <!--Estos 2 inputs estan escondidos hasta que se seleccione el checkbox de montaje-->
-                <p>Presupuesto:</p>
-                400€ <input type="range" min="400" max="4000" value="2200"> 4000€
-                <p>Color de los cables:</p>
-                <input type="color" value="#000000">
-            </article>
-            <p>Mensaje:</p>
-            <input type="text" placeholder="Escribe aquí tu mensaje"><br><br>
-            <button>Enviar</button>
+            <form action="/submit">
+                <p><b>Nombre:</b></p>
+                <input type="text" required placeholder="Nombre">
+                <p><b>Email:</b></p>
+                <input type="email" required placeholder="Correo electronico">
+                <p><b>Telefono:</b></p>
+                <input type="number" required placeholder="Nº de telefono">
+                <p><b>Direccion</b></p>
+                <input type="text" required placeholder="Direccion">
+                <p><b>Servicio</b></p>
+                <article class="contacto-servicios">
+                    <div>
+                        <input type="checkbox"> Mantenimiento
+                        <input type="checkbox"> Reparacion
+                        <input type="checkbox" id="montaje"> Montaje
+                    </div>
+                    <div>
+                        <input type="checkbox"> Instalacion de SO
+                        <input type="checkbox"> Actualizacion de drivers
+                        <input type="checkbox"> Overcloking
+                    </div>
+                </article>
+                <article class="montaje">
+                    <!--Estos 2 inputs estan escondidos hasta que se seleccione el checkbox de montaje-->
+                    <p><b>Presupuesto:</b></p>
+                    400€ <input type="range" min="400" max="4000" value="2200"> 4000€
+                    <p><b>Color de los cables:</b></p>
+                    <input type="color" value="#000000">
+                </article>
+                <p><b>Mensaje:</b></p>
+                <input type="text" required placeholder="Escribe aquí tu mensaje"><br><br>
+                <button>Enviar</button>
+            </form>
+            
         </section>
         <section class="redes-sociales">
             <h2>Redes sociales</h2>
