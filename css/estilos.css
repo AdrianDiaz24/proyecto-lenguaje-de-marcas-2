@@ -11,6 +11,10 @@
     font-family: "Dosis", serif;
 }
 
+:root footer{
+    background-color: #C3C3BE;
+}
+
 [data-theme="dark-mode"] {
     background-color: #182933;
 }
@@ -27,7 +31,7 @@
 }
 
 footer{
-    background-color: #C3C3BE;
+    background-color: var(background-color);
     position:static;
     width: 100%;
     bottom: 0px;
