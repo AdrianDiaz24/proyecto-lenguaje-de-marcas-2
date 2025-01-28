@@ -116,6 +116,10 @@ section{
     width: 715px;
 }
 
+.quienes-somos  div p{
+    font-size: 14px;
+}
+
 
 .que-encontraras{
     display: flex;
