@@ -68,6 +68,14 @@ Nuestra página web es un espacio único dedicado a brindar servicios especializ
 ## Instrucciones para visualizarlo
 
 1. Clonar el repositorio en una carpeta de tu preferencia o descargarlo como zip y descomprimirlo todo en una misma carpeta.
-2. Abrir el archivo index.html en tu navegador web favorito.
+2. Abrir el archivo index.html en tu navegador.
 
+## Identificar y clasificar los lenguajes de script de cliente relacionados con la web, destacando las características de JavaScript.
 
+Se usa HTML y CSS para la creacion de la pagina y JavaScript como lenguaje de Script relacionando este con el html para modificar el DOM algunas de sus caracteristicas son las siguientes:
+- Ejecución en el cliente: El código se ejecuta en el navegador del usuario, reduciendo la carga en el servidor.
+- Interactividad: Permite respuestas dinámicas a las acciones del usuario.
+- Integración con HTML y CSS: JavaScript trabaja junto con estos lenguajes para crear experiencias web ricas.
+- Sintaxis flexible y moderna: Soporta múltiples paradigmas como programación orientada a objetos y funcional.
+
+## Ejemplos documentados de manipulación del DOM
