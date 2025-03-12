@@ -20,8 +20,8 @@
 }
 
 [data-theme="dark-mode-footer"] {
-    background-color: #080705;
-    color: #ffffff;
+    background-color: #080705 !important;
+    color: #ffffff !important;
 }
 
 .columna_footer{
@@ -341,7 +341,7 @@ input[type="checkbox"]:checked + label .luna {
     display: block;
 }
 
-header:has(input[type="checkbox"]:checked) ~ main {
+/*header:has(input[type="checkbox"]:checked) ~ main {
     background-color: #182933;
     color: #050505; 
 }
@@ -350,6 +350,7 @@ header:has(input[type="checkbox"]:checked) ~ footer {
     color: #ffffff;
     background-color: #000000;
 }
+*/
 
 .evento{
     background-color: #C3C3BE;
