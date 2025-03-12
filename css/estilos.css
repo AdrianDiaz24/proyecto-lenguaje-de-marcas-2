@@ -315,11 +315,11 @@ section{
 .montaje{
     display: none;
 }
-
+/*
 .contacto-servicios:has(#montaje:checked) ~ .montaje {
     display: block;
 }
-
+*/
 header input[type="checkbox"]{
     display: none;
 }

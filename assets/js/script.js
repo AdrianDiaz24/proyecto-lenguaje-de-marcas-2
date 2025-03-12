@@ -5,7 +5,7 @@ const body = document.body;
 const footer = document.querySelector('footer');
 
 darkModeToggle.addEventListener('change', () => {
-    console.log('Checkbox cambiado:', darkModeToggle.checked);
+    console.log('Checkbox de modo oscuro cambiado:', darkModeToggle.checked);
 
     if (darkModeToggle.checked) {
 
@@ -49,3 +49,4 @@ darkModeToggle.addEventListener('change', () => {
     console.log('Atributo body:', body.getAttribute('data-theme'));
     console.log('Atributo footer:', footer.getAttribute('data-theme'));
 });
+
