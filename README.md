@@ -80,6 +80,20 @@ Se usa HTML y CSS para la creacion de la pagina y JavaScript como lenguaje de Sc
 
 ## Ejemplos documentados de manipulación del DOM
 
+### Cambio del modo oscuro
+Primero para realizar el cambio del estilo para hacer el modo oscuro hay que seleccionar el elemento que queremos cambiar, en este caso el body y footer, despues antes de poder cambiar el estilo hay que seleccionar el input por la ID con el getElementById(), ya por ultimo para cambiar el estilo hay que añadir un escuchador un addEventListener() y que este "escuche" o vea cuando cambia con el evento change(), el input puede cambiar a checked o no, en este caso si se cambia a true, entonces se activa el modo oscuro, si no se cambia a false, entonces se desactiva el modo oscuro, esto se hace con el setAttribute() que selecciona el atributo del tema que seria el default que esta en el Root y con la cambia por la variable del modo oscuro almacendada en el CSS.
+
+### Añadir un mensaje en la parte inferior de la página
+Primero hay que crear un elemento desde el cual se mostrara el mensaje, esto se hace con el createElement en el documento esto lo guardamos en una constante para poder ir cambiando el estilo lo cual es lo segundo ya que  seleccionando esta constante y con el .style se le va añadiendo estilos con el backgroundcolor, padding, entre otros, despues se añade el mensaje con un textContent mostrando si se ha puesto o quitado el modo oscuro y por ultimo se añade el hijo (Child) con el appendChild al body para que se muestre
+
+### Eliminar el mensaje en la parte inferior de la página
+Primero hay que añadir un "cronometo" / "contador" para que pasado X tiempo en ms se ejecute la parte del codigo que se quiera en este caso es tan facil con al body quitarle el hijo del mensaje con el removeChild()
+
+### Mostrar y Ocultar los input del formulario de contacto
+
+Primero se seleciona por la ID el input que lo activa con el getElementById() y despues igual que el cambio de modo oscuro con un addEventListener() se "escucha" el evento Change y cuando esto pasa se verificas si el input esta checked o no, lo cual hace que seleccionando la clase de los inputs con el document.querySelector(.nombre_de_la_clase) se le cambie con el .style se cambia el display de none a block o a none si no esta checked el input
+
+
 https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
 
 En el script mostrado arriba se ven los soguientes elementos de manipulacion del DOM
