@@ -25,26 +25,31 @@
             <h2>Contacta con nosotros</h2>
             <form action="contacto.html">
                 <p><b>Nombre:</b></p>
-                <input type="text" required placeholder="Nombre">
+                <input type="text" required placeholder="Nombre" id="form-nombre">
+                <p class="error" id="error-nombre">Nombre necesario</p>
                 <p><b>Email:</b></p>
-                <input type="email" required placeholder="Correo electronico">
+                <input type="email" required placeholder="Correo electronico" id="form-correo">
+                <p class="error" id="error-correo">Correo electronico no valido</p>
                 <p><b>Telefono:</b></p>
-                <input type="number" required placeholder="Nº de telefono">
+                <input type="number" required placeholder="Nº de telefono" id="form-telefono">
+                <p class="error" id="error-telefono">Telefono no valido</p>
                 <p><b>Direccion</b></p>
-                <input type="text" required placeholder="Direccion">
+                <input type="text" required placeholder="Direccion" id="form-direccion">
+                <p class="error" id="error-direccion">Introduce una direccion</p>
                 <p><b>Servicio</b></p>
                 <article class="contacto-servicios">
                     <div>
-                        <input type="checkbox"> Mantenimiento
-                        <input type="checkbox"> Reparacion
-                        <input type="checkbox" id="montaje"> Montaje
+                        <input type="checkbox" class="servicio"> Mantenimiento
+                        <input type="checkbox" class="servicio"> Reparacion
+                        <input type="checkbox" id="montaje" class="servicio"> Montaje
                     </div>
                     <div>
-                        <input type="checkbox"> Instalacion de SO
-                        <input type="checkbox"> Actualizacion de drivers
-                        <input type="checkbox"> Overcloking
+                        <input type="checkbox" class="servicio"> Instalacion de SO
+                        <input type="checkbox" class="servicio"> Actualizacion de drivers
+                        <input type="checkbox" class="servicio"> Overcloking
                     </div>
                 </article>
+                <p class="error" id="error-servicios">Selecciona al menos un servicio</p>
                 <article class="montaje">
                     <!--Estos 2 inputs estan escondidos hasta que se seleccione el checkbox de montaje-->
                     <p><b>Presupuesto:</b></p>
@@ -53,7 +58,8 @@
                     <input type="color" value="#000000">
                 </article>
                 <p><b>Mensaje:</b></p>
-                <input type="text" required placeholder="Escribe aquí tu mensaje"><br><br>
+                <input type="text" required placeholder="Escribe aquí tu mensaje" id="form-mensaje">
+                <p class="error" id="error-mensaje">Escribe un mensaje</p><br>
                 <button>Enviar</button>
             </form>
         </section>
@@ -119,5 +125,6 @@
     </footer>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/inputsMontaje.js"></script>
+    <script src="assets/js/validacionFormulario.js"></script>
 </body>        
             

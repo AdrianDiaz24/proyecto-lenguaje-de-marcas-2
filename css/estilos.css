@@ -378,6 +378,12 @@ header:has(input[type="checkbox"]:checked) ~ footer {
     transform: scale(1.1);
 }
 
+.error{
+    margin: 5px;
+    color: red;
+    font-size: 12px;
+    display: none;
+}
 
 @media (width < 1037px) {
     .quienes-somos{
