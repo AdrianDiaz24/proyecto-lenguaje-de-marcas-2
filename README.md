@@ -79,3 +79,40 @@ Se usa HTML y CSS para la creacion de la pagina y JavaScript como lenguaje de Sc
 - Sintaxis flexible y moderna: Soporta múltiples paradigmas como programación orientada a objetos y funcional.
 
 ## Ejemplos documentados de manipulación del DOM
+
+### Cambio del modo oscuro
+Primero para realizar el cambio del estilo para hacer el modo oscuro hay que seleccionar el elemento que queremos cambiar, en este caso el body y footer, despues antes de poder cambiar el estilo hay que seleccionar el input por la ID con el getElementById(), ya por ultimo para cambiar el estilo hay que añadir un escuchador un addEventListener() y que este "escuche" o vea cuando cambia con el evento change(), el input puede cambiar a checked o no, en este caso si se cambia a true, entonces se activa el modo oscuro, si no se cambia a false, entonces se desactiva el modo oscuro, esto se hace con el setAttribute() que selecciona el atributo del tema que seria el default que esta en el Root y con la cambia por la variable del modo oscuro almacendada en el CSS.
+
+### Añadir un mensaje en la parte inferior de la página
+Primero hay que crear un elemento desde el cual se mostrara el mensaje, esto se hace con el createElement en el documento esto lo guardamos en una constante para poder ir cambiando el estilo lo cual es lo segundo ya que  seleccionando esta constante y con el .style se le va añadiendo estilos con el backgroundcolor, padding, entre otros, despues se añade el mensaje con un textContent mostrando si se ha puesto o quitado el modo oscuro y por ultimo se añade el hijo (Child) con el appendChild al body para que se muestre
+
+### Eliminar el mensaje en la parte inferior de la página
+Primero hay que añadir un "cronometo" / "contador" para que pasado X tiempo en ms se ejecute la parte del codigo que se quiera en este caso es tan facil con al body quitarle el hijo del mensaje con el removeChild()
+
+### Mostrar y Ocultar los input del formulario de contacto
+
+Primero se seleciona por la ID el input que lo activa con el getElementById() y despues igual que el cambio de modo oscuro con un addEventListener() se "escucha" el evento Change y cuando esto pasa se verificas si el input esta checked o no, lo cual hace que seleccionando la clase de los inputs con el document.querySelector(.nombre_de_la_clase) se le cambie con el .style se cambia el display de none a block o a none si no esta checked el input
+
+
+https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
+
+En el script mostrado arriba se ven los soguientes elementos de manipulacion del DOM
+- getElementById(): Selecciona un elemento del DOM por una ID en este caso un input con la ID dark-mode
+- document.body: Selecciona/accede al body del HTML
+- querySelector(): Selecciona el primer elemento que encuentra en el documento del tipo especificado, en este caso el footer
+- X.addEventListener(): Se añade un escuchador al elemento especificado, en este caso al input que tiene la id dark-mode y cuando este cambia es decir pasa a checked o no checked se activa realizando alguno de los cambios especificados
+- setAttribute(): Añade/modifica un atributo, en este caso del body o el footer se cambia el tema claro por el oscuro
+- removeAttribute(): Elimina el atributo especificado desde donde se llama por ejemplo body.removeAttribute() (teniendo en cuenta que body es una costante que tiene selecionado el body del documento), en el ejemplo se usa para quitar el tema y dejar el que se encuentra en la raiz del documento que seria el clarito
+- document.createElement(): Crea un nuevo elemento en el DOM, en este caso se una para crear un div donde va un mensajito de si se ha activado el modo oscuro o si se ha desactivado
+- textContent: Que define un texto a un elemento, en este caso en el div
+- x.style.atributo: añade un estilo al elemento que se le llama, por ejemplo message.style.background-color = #000 siendo el atributo el mismo nombre que llamarias en el CSS para darle ese atributo/estilo a una parte del HTML
+- x.appendChild(): añade un elemento como hijo desde donde se llama, en este caso llamandolo desde el body se le hayade el div que se encuentra en la constante del mensaje(message)
+- x.removeChild(): Elimina el elemento especificado como hijo del elemento donde se le llama, en este caso se quita el div donde va el mensaje del body despues de haber pasado 1 segudno
+
+https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/inputsMontaje.js#L3-L16
+
+- En este ejemplo se hace casi lo mismo que en el anterior:
+- se selecciona un elemento por la ID montaje que seria un input con el getElementById()
+- con el addEventListener() se añade uno al input de montaje
+- cuando cambia el input con el querySelector() se coge la clase .montaje
+- la clase .montaje seleccionada se le cambia el display con style.display a block o a none dependiendo del caso especificado
