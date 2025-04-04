@@ -22,7 +22,7 @@ formNombre.addEventListener('input', () => {
     }
 });
 
-const correoRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const correoRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
 
 formCorreo.addEventListener('input', () => {
     if (formCorreo.value === '' || !correoRegex.test(formCorreo.value)) {
