@@ -385,6 +385,10 @@ header:has(input[type="checkbox"]:checked) ~ footer {
     display: none;
 }
 
+.filtro{
+    padding-top: 10px
+}
+
 @media (width < 1037px) {
     .quienes-somos{
         background-image: url(../assets/images/fondo-gris.png);
