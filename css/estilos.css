@@ -169,6 +169,18 @@ section{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.linea-servicios article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linea-servicios article button{
+    margin: 20px;
+    cursor: pointer;
 }
 
 .section-servicios h2{
@@ -403,6 +415,7 @@ header:has(input[type="checkbox"]:checked) ~ footer {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
+
 
 @media (width < 1037px) {
     .quienes-somos{

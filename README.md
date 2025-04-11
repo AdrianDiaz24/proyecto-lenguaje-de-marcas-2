@@ -133,6 +133,16 @@ Segundo en el JS selecciono los inputs por el nombre con un QuerySelector() y ta
 
 Esta explicacion seria la misma pero con la variantes de las noticias de Software y de Hardware, ya que de esta forma se logra tener ambas separadas
 
+### Flujo libre del proyecto (Marcar servicios como favoritos)
+
+Lo primero es el HTML que añadir un nuevo contenero(section) este es igual que los de servicios pero dejandolo vacion y dandole el titulo de Servicios Favoritos y dandole una id al section y al div para poder seleccionarlos facilmente, tambien se añaden los botones debajo de cada articulo con una clase para poder seleccionarlos todo a la vez.
+
+Lo segundo que hice fue añadir al article un display Flex, Flex-direction: column y justify-content: space-between para que se queden alineados los botones, tambien en el div que diferencian las lineas de estos apartados se le añade el Flex-wrap: wrap para cuando se creen en el nuevo section si añado mas de 4 servicios se muevan solo a la siguiente linea
+
+Por ultimo vamos al JS y seleccionamos todos los botones de añadir a favoritos con el QuerySelectorAll() y el contenedor donde se pondran los servicios favoritos con el getElementById(), tras ellos con un forEach() se añade un listener a cada botonm para que se activa al ser clickado, una vez esto pase se selccionar el articulo del boton clickado, esto se hace con el botob.closet(article) que devuelve el elemento mas cercano en el DOM del especificado a ese boton que en este caso es el article, a continuacion de ese article seleccionado seleccionamos el texto del h4, y del img el  src y el alt.
+
+Despues con todo ya seleccionado se crea un nuevo articulo al que se le añade el codigo de HTML que quiero que se cree añadiendo tambien la variable del servicio original, por ejemplo el h4 se le añade y el texto del mismo seria la varia que alamcena el del original y asi tambien con el src y el alt y tambien un bonton para quitarlo, una vez realizado esto con el contenedor que almacena los servicios favorito que seleccionamos antes le añadimos con el appendChild() del articulo recien creado y se le añade al boton de este un listener que cuando sea clickado elimine su propio article 
+
 ### explicacion de los comandos basicos de JS
 
 https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
