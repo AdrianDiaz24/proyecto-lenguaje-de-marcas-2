@@ -111,6 +111,20 @@ Lo segundo seria empezar con el JS, en este se realizan las siguientes acciones:
 - Finalmente se añade a la galeria con appendChild() el img creado
 - Por ultimo se llama a la funcion del reader .readAsDataURL() que es la que lee el contenido del archivo y activa la funcion definida antes del onLoad() haciendo que se cree la img en la galeria del HTML, y a esta ya por utimo se le da el estilo en el CSS
 
+### Validador de formulario
+
+Primero en el HTML creo varios parafor (p) debajo de los inputs del formulario y a estos les doy una id para poder identificarlos, al igual que los inputs.
+
+Lo siguiente que hago es en el JS selecciono cada uno de los parrafos y de los input mediante las id
+
+Ya por ultimo se crean uno if para comprobar el cotenido del los inputs, en si son todo iguales exepto 2 que explicare abajo, en estos lo que hacen principalmente es que si escribes algo y lo borras, un listener activa la comprobacion y si el valor del input  es igual a '' es decir esta vacio el String el display del p con el error cambia a block y en caso contrario se cambia a none
+
+El primer caso en el que cambia es levemente en el del correo electronico, tiene la misma funcion que el resto con el añadido de que ademas no deve estar vacio, tambien debe seguir el formato que se le paso por la expresion regular, en este se hace que el patron con la funcion .test(formCorreo.value) hace que el string que introducimo en el input se le pase a la funcion y retorne un true cuando el String siga el formato del patron.
+
+El segundo caso fue que se me complico un poco mas ya que es el grupo de inputs de los servicios ya que si no habia ninguno deberia salir el mensaje error pero con que habiera uno quitarse, aqui lo que hice fue en vez de selecionar el input por la id selecione todos por la clase y le añadie el listener que comprueba el cambio y eso inicia un comprobacion de todos los checks con el array de estos y el .some() que en caso de que alguno se encontrara checkeado devolviera true y se almacenara en una variable y con un if se compriba si esa variable es true o no, en este caso si es true se oculta el mensaje de error y si no se muestra el error
+
+### explicacion de los comandos basicos de JS
+
 https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
 
 En el script mostrado arriba se ven los soguientes elementos de manipulacion del DOM
