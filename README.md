@@ -93,6 +93,23 @@ Primero hay que añadir un "cronometo" / "contador" para que pasado X tiempo en 
 
 Primero se seleciona por la ID el input que lo activa con el getElementById() y despues igual que el cambio de modo oscuro con un addEventListener() se "escucha" el evento Change y cuando esto pasa se verificas si el input esta checked o no, lo cual hace que seleccionando la clase de los inputs con el document.querySelector(.nombre_de_la_clase) se le cambie con el .style se cambia el display de none a block o a none si no esta checked el input
 
+### Agregar imágenes a la galería dinámica
+
+Primero en el HTML hay que añadir un div donde se vayan a crear y mostrar las fotos para poder seleccionarlo facilmente abria que darle una clase o una id, tambien hay que añadir un input de tipo File y con una id pero tambien es recomendable añadir el accept que define que tipo de archivo podemos seleccionar, en el caso de image/* singnifica que solo aceptara archivos de imagen y el /* especifica que se pueden todos los tipos extensiones para archivos de imagen, por ejemplo JPEG, PNG, etc...
+
+Lo segundo seria empezar con el JS, en este se realizan las siguientes acciones:
+- Se selecciona el input de tipo File con el getElementById()
+- Se selecciona el div donde se va a mostrar las fotos con el getElementById()
+- Se añade un evento listener al input de tipo File con el addEventListener() y cuando cambia se ejecuta la funcion que nosotros queremos
+- Se crear una costante para los archivos asignandole el valor de un Array de los archivos añadidos en el input
+- Con un forEach() se recorren los archivos realizando lo que nosotros le queremos con cada uno de ellos, el forEach() es similar a un for (archivo of archivos)
+- Ahora para cada archivo se le crea una costante lector que es una instancia de FileReader, esto es para poder leer el contenido del archivo
+- Despues desde el lecto se llama a la funcion onLoad() que carga el archivo y eso ejecuta una funcion que se le pasa el evento que es decir el contenido del archivo
+- Se crea una costante que seria una img
+- A la img creada antes se le pasa el src que este es una llamada al contenido del archivo (evento) que a su vez llama al reader (target) y es llama a result que devuelve el contenido del archivo por decirlo de alguna manera como una ruta o url que este seria un String del archivo codificado en texto que es capaz de ser interpretado por el src de img
+- Tambien se le añade a la img un alt que es el nombre del archivo
+- Finalmente se añade a la galeria con appendChild() el img creado
+- Por ultimo se llama a la funcion del reader .readAsDataURL() que es la que lee el contenido del archivo y activa la funcion definida antes del onLoad() haciendo que se cree la img en la galeria del HTML, y a esta ya por utimo se le da el estilo en el CSS
 
 https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
 

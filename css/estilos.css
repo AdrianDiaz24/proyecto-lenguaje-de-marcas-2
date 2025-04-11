@@ -383,11 +383,26 @@ header:has(input[type="checkbox"]:checked) ~ footer {
     color: red;
     font-size: 12px;
     display: none;
-}
+}   
 
 .filtro{
     padding-top: 10px
 }
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .galeria img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
 
 @media (width < 1037px) {
     .quienes-somos{
