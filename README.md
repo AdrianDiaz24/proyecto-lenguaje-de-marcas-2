@@ -123,6 +123,16 @@ El primer caso en el que cambia es levemente en el del correo electronico, tiene
 
 El segundo caso fue que se me complico un poco mas ya que es el grupo de inputs de los servicios ya que si no habia ninguno deberia salir el mensaje error pero con que habiera uno quitarse, aqui lo que hice fue en vez de selecionar el input por la id selecione todos por la clase y le añadie el listener que comprueba el cambio y eso inicia un comprobacion de todos los checks con el array de estos y el .some() que en caso de que alguno se encontrara checkeado devolviera true y se almacenara en una variable y con un if se compriba si esa variable es true o no, en este caso si es true se oculta el mensaje de error y si no se muestra el error
 
+### Filtros en la noticias
+
+En mi pagina hay noticias de Software y de Hardware, voy a explicar como se hace con uno ya que el otro se realzio de la misma forma pero con sus valores
+
+Primero en el HTML le coloque a los div que diferencian cada noticia una id que hacia referencia al tipo de noticia que era, tambien añadi al section un details con los input asociados a esas id con un nombre para poder seleccionarlo y un valor para poder comprobar que filtro a activado y por ultimo una id al section para selecionarlo
+
+Segundo en el JS selecciono los inputs por el nombre con un QuerySelector() y tambien con un QuerySelector() los div de las noticias que son hijos de otro div que son hijos del section que selecionamos con el getElementById(), despues hacemos con un forEach() que se le añada un listener al input para cuando haya algun cambio se haga un comprobacion de cual esta activado y se añaden a un mapa, despues por cada articulo de la seccion pasa por un if y si no hay ninguno activado o si la id esta incluida en el valor de alguno de los inputs se muestre en caso contrario se oculta.
+
+Esta explicacion seria la misma pero con la variantes de las noticias de Software y de Hardware, ya que de esta forma se logra tener ambas separadas
+
 ### explicacion de los comandos basicos de JS
 
 https://github.com/AdrianDiaz24/proyecto-lenguaje-de-marcas-2/blob/85625cce2ed3ac835db293c6d42edb5b5503cd98/assets/js/script.js#L3-L51
